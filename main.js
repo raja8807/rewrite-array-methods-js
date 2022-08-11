@@ -26,8 +26,20 @@ function myShift(array) {
     return newArr
 }
 
-console.log(myShift(arr))
+// console.log(myShift(arr))
 
+function myUnShift(array,value){
+    let newArr = [];
+    let index = 1;
+    newArr[0]=value;
+    for(let i=0;i<array.length;i++){
+        newArr[index]=array[i];
+        index++
+    }
+    return newArr;
+}
+
+// console.log(myUnShift(arr,10));
 
 function myToString(array) {
     let str = array[0];
@@ -157,6 +169,4 @@ function add2(item){
 }
 
 // console.log(myMap(arr,add2));
-
-
 
